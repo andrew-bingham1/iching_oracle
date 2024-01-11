@@ -1,0 +1,2 @@
+class HexagramsController < ApplicationController
+end

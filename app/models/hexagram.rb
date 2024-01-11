@@ -1,0 +1,2 @@
+class Hexagram < ApplicationRecord
+end

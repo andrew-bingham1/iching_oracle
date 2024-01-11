@@ -1,0 +1,2 @@
+module HexagramsHelper
+end

@@ -10,19 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_01_11_012143) do
+ActiveRecord::Schema[7.0].define(version: 2024_01_11_015637) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "hexagrams", force: :cascade do |t|
     t.string "title"
-    t.integer "number"
-    t.string "line"
+    t.string "oracle"
     t.string "summary"
     t.string "judgment"
+    t.string "judgment_sum"
     t.string "image"
-    t.string "uptrigram"
-    t.string "lotrigram"
+    t.string "image_sum"
+    t.string "image_path"
+    t.string "up_trigram"
+    t.string "lo_trigram"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

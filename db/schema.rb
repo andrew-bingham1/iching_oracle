@@ -22,9 +22,6 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_11_015637) do
     t.string "judgment_sum"
     t.string "image"
     t.string "image_sum"
-    t.string "image_path"
-    t.string "up_trigram"
-    t.string "lo_trigram"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

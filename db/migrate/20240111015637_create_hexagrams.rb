@@ -8,9 +8,6 @@ class CreateHexagrams < ActiveRecord::Migration[7.0]
       t.string :judgment_sum
       t.string :image
       t.string :image_sum
-      t.string :image_path
-      t.string :up_trigram
-      t.string :lo_trigram
 
       t.timestamps
     end

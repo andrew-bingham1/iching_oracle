@@ -1,0 +1,10 @@
+<h1> I Ching Oracle </h1>
+<%= link_to "About", '/about' %>
+<%= link_to "Index", 'hexagram/index' %>
+<%= link_to "History", '/history' %>
+
+<%= form_with url: '/index', method: :post do |form| %>
+  <%= form.label :question %>
+  <%= form.text_field :question %>
+  <%= form.submit "Consult the Oracle" %>
+<% end %>

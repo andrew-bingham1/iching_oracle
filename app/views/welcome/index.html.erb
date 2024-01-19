@@ -4,7 +4,7 @@
 <%= link_to "History", '/history' %>
 <%= link_to "Home", 'welcome/index' %>
 
-<%= form_with url: '/index', method: :post do |form| %>
+<%= form_with url: 'hexagram/random', method: :get do |form| %>
   <%= form.label :question %>
   <%= form.text_field :question %>
   <%= form.submit "Consult the Oracle" %>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=@hexagram.title%></title>
+  </head>
+  <body>
+    <div id='title-card'>
+      <h1><%=@hexagram.title%></h1>
+      <br>
+      <img src="/assets/hexagram<%=@hexagram.id%>.png" alt="Hexagram Image">
+    </div>
+    <br>
+    <div id='hexagram-text'>
+      <h2>The Oracle says...</h2>
+      <p><%=@hexagram.oracle.gsub("\n", "<br> <br>").html_safe%></p>
+    </div>
+      <br>
+    <div id='hexagram-details'>
+      <h4>Summary</h4>
+      <p><%=simple_format(@hexagram.summary)%></p>
+      <br>
+      <h4>The Judgment</h4>
+      <p><em><%=@hexagram.judgment%></em></p>
+      <p><%=simple_format(@hexagram.judgment_sum)%></p>
+      <br>
+      <h4>The Image</h4>
+      <p><em><%=@hexagram.image%></em></p>
+      <p><%=simple_format(@hexagram.image_sum)%></p>
+    </div>
+  </body>
+</html>

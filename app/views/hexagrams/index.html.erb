@@ -1,0 +1,7 @@
+<h2>Hexagram Index</h2>
+<ol>
+    <% @hexagrams.each do |hexagram| %>
+        <li><%= link_to hexagram.title, hexagram_path(hexagram.id) %></li>
+        <br>
+    <% end %>
+</ol>

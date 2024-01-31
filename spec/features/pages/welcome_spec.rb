@@ -1,16 +1,18 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
-RSpec.feature "Landing Page", type: :feature do
+RSpec.feature 'Landing Page', type: :feature do
   before(:each) do
     visit root_path
   end
 
-  it "exists" do
-      expect(current_path).to eq(root_path)
+  it 'exists' do
+    expect(current_path).to eq(root_path)
   end
 
-  it "has a title" do
-      expect(page).to have_content("I Ching Oracle")
+  it 'has a title' do
+    expect(page).to have_content('I Ching Oracle')
   end
 
   it 'has a link to home page' do
@@ -48,6 +50,6 @@ RSpec.feature "Landing Page", type: :feature do
   it 'can enter a question and click button to redirect to random show page' do
     fill_in('question', with: 'Should I buy a dog?')
     click_button('Consult the Oracle')
-    expect(current_path).to match(/hexagrams\/\d+/)
+    expect(current_path).to match(%r{hexagrams/\d+})
   end
 end

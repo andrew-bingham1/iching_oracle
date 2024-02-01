@@ -29,5 +29,6 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+/spec/fixtures
 /coverage
 .DS_Store

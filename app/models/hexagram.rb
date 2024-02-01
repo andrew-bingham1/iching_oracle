@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Hexagram < ApplicationRecord
   validates :title, presence: true
   validates :oracle, presence: true

@@ -3,31 +3,35 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%=@hexagram.title%></title>
-  </head>
-  <body>
     <div id='title-card'>
+    <title><%=@hexagram.title%></title>
       <h1><%=@hexagram.title%></h1>
       <br>
-      <img src="/assets/hexagram<%=@hexagram.id%>.png" alt="Hexagram Image">
+      <img src="/assets/hexagram<%=@hexagram.id%>.png" alt="Hexagram Image" style="display: block; margin-left: auto; margin-right: auto; width: 20%">
     </div>
-    <br>
     <div id='hexagram-text'>
       <h2>The Oracle says...</h2>
-      <p><%=@hexagram.oracle.gsub("\n", "<br> <br>").html_safe%></p>
+        <%if @response == nil%>
+          <p><%=@hexagram.oracle%></p>
+        <%else%>
+          <p><%=@response%></p>
+        <%end%>
     </div>
+  </head>
+    <br>
+  <body>
       <br>
     <div id='hexagram-details'>
       <h4>Summary</h4>
-      <p><%=simple_format(@hexagram.summary)%></p>
+        <p><%=simple_format(@hexagram.summary)%></p>
       <br>
       <h4>The Judgment</h4>
-      <p><em><%=@hexagram.judgment%></em></p>
-      <p><%=simple_format(@hexagram.judgment_sum)%></p>
+        <p><em><%=@hexagram.judgment%></em></p>
+        <p><%=simple_format(@hexagram.judgment_sum)%></p>
       <br>
       <h4>The Image</h4>
-      <p><em><%=@hexagram.image%></em></p>
-      <p><%=simple_format(@hexagram.image_sum)%></p>
+        <p><em><%=@hexagram.image%></em></p>
+        <p><%=simple_format(@hexagram.image_sum)%></p>
     </div>
   </body>
 </html>

@@ -1,5 +1,7 @@
-class PagesController < ApplicationController
-    def welcome; end
+# frozen_string_literal: true
 
-    def about; end
+class PagesController < ApplicationController
+  def welcome; end
+
+  def about; end
 end

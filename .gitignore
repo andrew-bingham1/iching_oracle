@@ -31,6 +31,5 @@
 /config/master.key
 /spec/fixtures
 /config/application.yml
-config/application.yml
 /coverage
 .DS_Store

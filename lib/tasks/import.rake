@@ -3,7 +3,7 @@
 namespace :import do
   desc 'Import Hexagrams from Excel file'
   task hexagram: :environment do
-    require 'rubyxl'
+    require 'rubyXL'
 
     def import_hexagram_from_excel
       workbook = RubyXL::Parser.parse(Rails.root.join('db', 'seeds', 'iching_data_ten_excel.xlsx').to_s)

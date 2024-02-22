@@ -1,0 +1,279 @@
+
+body {
+margin: 0;
+height: 100%;
+padding: 0;
+background: #000 url('bg.jpg') repeat-x top;
+color: #999;
+font-family: arial, sans-serif;
+font-size: 0.7em;
+}
+
+a {
+text-decoration: none;
+color: #f90;
+}
+
+a:hover {
+text-decoration: none;
+color: #950;
+}
+
+p {
+line-height: 1.7em;
+}
+
+#container {
+margin: 0 auto;
+padding: 0;
+width: 794px;
+height: 100%;
+}
+
+#head {
+margin: 0;
+padding: 0;
+width: 794px;
+height: 200px;
+background: #000 url('head.jpg') no-repeat top;
+}
+
+#head h1 {
+position: relative; top: 80px; left: 47px;
+margin-top: 0;
+font-family: 'bookman old style', 'book antiqua', times, serif;
+color: #FFF;
+font-size: 1.8em;
+font-weight: 400;
+}
+
+#head h5 {
+position: relative; top: 65px; left: 47px;
+margin-top: 0;
+font-family: verdana, arial, sans-serif;
+font-variant: small-caps;
+letter-spacing: 0.3em;
+color: #700;
+font-size: 1.2em;
+font-weight: 600;
+}
+
+#head img {
+float: right;
+display: inline;
+margin: 0 17px 0 0;
+border: 0;
+padding: 0;
+z-index: 1;
+}
+
+#topnav {
+float: right;
+clear: left;
+margin: 28px -15px 0 0;
+font-size: 1.0em;
+z-index: 99;
+}
+
+#topnav a {
+text-decoration: none;
+color: #888;
+padding-left: 1.0em;
+}
+
+#topnav a:hover {
+text-decoration: none;
+color: #fff;
+}
+
+#menu {
+position: absolute; top: 155px;
+margin-left: 17px;
+padding: 0;
+height: 61px;
+font-size: 0px;
+}
+
+#menu ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+#menu ul li {
+display: inline;
+line-height: 80px;
+background: #4c0000 url('menushine.jpg') repeat-x top;
+}
+
+#menu ul li a {
+padding: 6px 12px 31px 12px;
+font-size: 15px;
+font-family: 'lucida sans unicode', helvetica, arial, sans-serif;
+background: #4c0000 url('menushine.jpg') repeat-x top;
+color: #999;
+text-decoration: none;
+}
+
+#menu ul li a:hover {
+background: #cc6600 url('menushine.jpg') repeat-x bottom;
+color: #fff;
+}
+
+#main {
+margin: 40px 17px ! important;
+margin: -20px 17px 40px 17px;
+width: 760px;
+padding: 0px;
+background: #000 url('churchfade.jpg') no-repeat top right;
+}
+
+#content {
+margin: 0px; height: 100%;
+padding: 30px 20px;
+}
+
+.left {
+float: left;
+width: 310px;
+padding: 0 0 0 0;
+}
+
+.right {
+float: left;
+width: 400px;
+padding: 0 0 0 0;
+}
+
+.middle {
+margin: 0 210px 0 370px;
+padding: 0 0 0 0;
+background: #111 url('diag.gif');
+text-align: center;
+}
+
+.subnav {
+margin:10px 0 10px 0;
+padding:0;
+border-top:1px solid #222;
+font-size: 1.1em;
+}
+
+.subnav li {
+margin: 0px;
+padding: 1px;
+list-style:none;
+}
+
+.subnav li a {
+padding: 2px 2px 2px 18px;
+display: block;
+margin:  0;
+color:#777;
+text-decoration:none;
+border-bottom: 1px solid #222;
+background: #000 url('arrow.gif') no-repeat left;
+}
+
+.subnav li a:hover {
+border-bottom: 1px solid #333;
+background: #222 url('arrowred.gif') no-repeat left;
+color:#ccc;
+}
+
+h2 {
+margin: 0;
+padding-top: 10px;
+color: #FFF;
+font-size: 1.6em;
+font-family: 'bookman old style', 'book antiqua', times, serif;
+font-weight: 400;
+border-bottom: solid 3px #666;
+background-color: #000;
+text-align: center;
+}
+
+h3 {
+color: #f90;
+font-size: 1.2em;
+font-family: 'bookman old style', 'book antiqua', times, serif;
+font-weight: 600;
+margin: 0 0 20px 0;
+border-bottom: solid 0px #940;
+}
+
+h4 {
+display: inline;
+margin: 0 0 20px 0;
+clear: both;
+float: right;
+color: #888;
+padding-right: 5px;
+font-size: 1.0em;
+font-family: arial, sans-serif;
+font-weight: 400;
+font-style: italic;
+text-align: right;
+}
+
+
+.left h2 {
+border-bottom: solid 3px #940;
+}
+
+.right h2 {
+border-bottom: solid 3px #600;
+background-color: transparent;
+}
+
+.clearer {
+clear: both;
+}
+
+div.blogitem {
+background: #000 url('pfade.jpg') repeat-x bottom;
+padding: 20px 15px 50px 15px;
+}
+
+div.quote {
+clear: both;
+display: block;
+margin: 8px 0 8px 10px;
+background: #111 url('diag.gif');
+border-left: solid 2px #c60;
+padding: 8px;
+line-height: 1.7em;
+}
+
+.comment a, .comment a:hover {
+padding: 0 5px;
+}
+
+img.ivan {
+    position: fixed;
+    right: 60px;
+    top: 260px;
+    width: auto;
+    height: auto;
+    margin: 12px 0;
+    padding: 3px;
+    border: 2px solid #9f8e8e;
+    background-color: #9f8e8e;
+}
+
+img.preload {
+display: none;
+}
+
+.foot {
+height: 45px;
+margin: 0 0 0 0;
+padding: 8px 0 0 0 ! important; padding-top: 24px;
+text-align: center;
+background: #333 url('foot.jpg') repeat-x top;
+color: #960;
+}
+
+.spacer {
+        height: 100px;
+}

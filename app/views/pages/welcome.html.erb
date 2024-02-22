@@ -1,5 +1,14 @@
-<%= form_with url: 'random', method: :get do |form| %>
-  <%= form.label :question %>
-  <%= form.text_field :question %>
-  <%= form.submit "Consult the Oracle" %>
-<% end %>
+<body>
+  <br><br><br><br><br><br><br><br><br><br>
+    <div id="content">
+      <div class="left">
+        <div class="blogitem">
+         <h3> Implore the oracle for guidance... </h3>
+            <%= form_with url: 'random', method: :get do |form| %>
+              <%= form.text_field :question %>
+              <%= form.submit "Consult the Oracle" %>
+            <% end %>
+        </div>
+      </div>
+    </div>
+</body>

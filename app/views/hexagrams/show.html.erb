@@ -1,37 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <div id='title-card'>
-    <title><%=@hexagram.title%></title>
-      <h1><%=@hexagram.title%></h1>
-      <br>
-      <img src="/assets/hexagram<%=@hexagram.id%>.png" alt="Hexagram Image" style="display: block; margin-left: auto; margin-right: auto; width: 20%">
-    </div>
+<body>
+<br><br><br><br><br><br><br><br><br><br>
+<div id="content">
+    <div class="right">
+      <div id="title-card">
+        <h2 style="text-align: left;"><%=@hexagram.title%></h2>
+      </div>
+        <br>
+      <img class='ivan' src="/assets/hexagram<%=@hexagram.id%>.png" alt="Hexagram Image" style="display: block; margin-left: auto; margin-right: auto; width: 20%">
+
     <div id='hexagram-text'>
-      <h2>The Oracle says...</h2>
         <%if @response == nil%>
-          <p><%=@hexagram.oracle%></p>
+
         <%else%>
+          <h3>The Oracle says...</h3>
           <p><%=@response%></p>
         <%end%>
     </div>
-  </head>
     <br>
   <body>
       <br>
     <div id='hexagram-details'>
-      <h4>Summary</h4>
+      <h3>Summary</h3>
         <p><%=simple_format(@hexagram.summary)%></p>
       <br>
-      <h4>The Judgment</h4>
+      <h3>The Judgment</h3>
         <p><em><%=@hexagram.judgment%></em></p>
         <p><%=simple_format(@hexagram.judgment_sum)%></p>
       <br>
-      <h4>The Image</h4>
+      <h3>The Image</h3>
         <p><em><%=@hexagram.image%></em></p>
         <p><%=simple_format(@hexagram.image_sum)%></p>
     </div>
   </body>
+  </div>
 </html>

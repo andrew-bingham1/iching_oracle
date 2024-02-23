@@ -190,7 +190,7 @@ font-family: 'bookman old style', 'book antiqua', times, serif;
 font-weight: 400;
 border-bottom: solid 3px #666;
 background-color: #000;
-text-align: center;
+text-align: left;
 }
 
 h3 {
@@ -275,5 +275,5 @@ color: #960;
 }
 
 .spacer {
-        height: 100px;
+height: 100px;
 }

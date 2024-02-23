@@ -20,11 +20,6 @@ RSpec.feature 'Hexagram Index Page', type: :feature do
       expect(page).to have_link('About')
     end
 
-    it 'has a list of the first ten hexagrams' do
-      expect(page).to have_content(Hexagram.first.title)
-      expect(page).to have_content(Hexagram.last.title)
-    end
-
     it 'has a link to each hexagram' do
       expect(page).to have_link(Hexagram.first.title)
       expect(page).to have_link(Hexagram.last.title)

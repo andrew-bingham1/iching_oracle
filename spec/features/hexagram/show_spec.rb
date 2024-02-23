@@ -14,7 +14,7 @@ RSpec.describe 'Hexagram Show Page', type: :feature do
       expect(page).to have_content('The Creative')
       expect(page).to have_content('The Judgment')
       expect(page).to have_content('The Image')
-      expect(page).to have_content('The Oracle says...')
+      expect(page).to have_content('The first hexagram is made up of six unbroken lines.')
       expect(page).to have_css("img[src*='hexagram1.png']")
     end
   end

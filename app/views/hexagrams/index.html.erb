@@ -1,15 +1,13 @@
 <body>
 <div id="content">
     <div class="left">
-
-            <br><br><br><br><br><br><br><br>
+        <div class="spacer"></div>
                 <h2>Hexagram Index</h2>
                 <ol>
                     <% @hexagrams.each do |hexagram| %>
                         <li><%= link_to hexagram.title, hexagram_path(hexagram.id) %></li>
                         <br>
-                        <% end %>
-                    </ol>
-
+                    <% end %>
+                </ol>
      </div>
  </div>

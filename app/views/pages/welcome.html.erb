@@ -1,11 +1,11 @@
 <body>
-  <br><br><br><br><br><br><br><br><br><br>
+  <div class="spacer"></div>
     <div id="content">
       <div class="left">
         <div class="blogitem">
-         <h3> Implore the oracle for guidance... </h3>
+         <h6> Implore the oracle for guidance... </h6>
             <%= form_with url: 'random', method: :get do |form| %>
-              <%= form.text_field :question %>
+              <%= form.text_field :question, :size=>"30", placeholder: "ask your question here ", :maxlength=>"254" %>
               <%= form.submit "Consult the Oracle" %>
             <% end %>
         </div>

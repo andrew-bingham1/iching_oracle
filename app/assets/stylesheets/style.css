@@ -35,7 +35,7 @@ margin: 0;
 padding: 0;
 width: 794px;
 height: 200px;
-background: #000 url('head.jpg') no-repeat top;
+background: url('head.jpg') no-repeat top;
 }
 
 #head h1 {
@@ -52,9 +52,9 @@ position: relative; top: 65px; left: 47px;
 margin-top: 0;
 font-family: verdana, arial, sans-serif;
 font-variant: small-caps;
-letter-spacing: 0.3em;
+letter-spacing: 0.1em;
 color: #700;
-font-size: 1.2em;
+font-size: 2.7em;
 font-weight: 600;
 }
 
@@ -109,7 +109,7 @@ background: #4c0000 url('menushine.jpg') repeat-x top;
 #menu ul li a {
 padding: 6px 12px 31px 12px;
 font-size: 15px;
-font-family: 'lucida sans unicode', helvetica, arial, sans-serif;
+font-family: 'bookman old style', 'book antiqua', times, serif;
 background: #4c0000 url('menushine.jpg') repeat-x top;
 color: #999;
 text-decoration: none;
@@ -135,7 +135,7 @@ padding: 30px 20px;
 
 .left {
 float: left;
-width: 310px;
+width: 410px;
 padding: 0 0 0 0;
 }
 
@@ -216,6 +216,18 @@ font-style: italic;
 text-align: right;
 }
 
+h6 {
+margin-top: 0;
+font-family: verdana, arial, sans-serif;
+font-variant: small-caps;
+letter-spacing: 0.1em;
+color: #f90;
+font-size: 1.6em;
+font-weight: 600;
+text-align: left;
+}
+
+
 
 .left h2 {
 border-bottom: solid 3px #940;
@@ -275,5 +287,14 @@ color: #960;
 }
 
 .spacer {
-height: 100px;
+height: 50px;
+}
+.hiddenContent {
+display: none;
+}
+#showMore:checked + label {
+display: none;
+}
+#showMore:checked + label + .hiddenContent {
+display: block;
 }

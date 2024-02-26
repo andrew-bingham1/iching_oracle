@@ -5,7 +5,6 @@ require 'rails_helper'
 RSpec.describe Hexagram, type: :model do
   describe 'validations' do
     it { should validate_presence_of(:title) }
-    it { should validate_presence_of(:oracle) }
     it { should validate_presence_of(:summary) }
     it { should validate_presence_of(:judgment) }
     it { should validate_presence_of(:judgment_sum) }

@@ -16,7 +16,6 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_11_015637) do
 
   create_table "hexagrams", force: :cascade do |t|
     t.string "title"
-    t.string "oracle"
     t.string "summary"
     t.string "judgment"
     t.string "judgment_sum"

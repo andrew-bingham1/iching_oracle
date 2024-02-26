@@ -6,7 +6,7 @@ namespace :import do
     require 'rubyXL'
 
     def import_hexagram_from_excel
-      workbook = RubyXL::Parser.parse(Rails.root.join('db', 'seeds', 'iching_data_ten_excel.xlsx').to_s)
+      workbook = RubyXL::Parser.parse(Rails.root.join('db', 'seeds', 'iching_data.xlsx').to_s)
       worksheet = workbook[0]
 
       puts 'Importing Hexagrams...'
@@ -16,12 +16,11 @@ namespace :import do
 
         Hexagram.create!(
           title: row[0].value,
-          oracle: row[1].value,
-          summary: row[2].value,
-          judgment: row[3].value,
-          judgment_sum: row[4].value,
-          image: row[5].value,
-          image_sum: row[6].value
+          summary: row[1].value,
+          judgment: row[2].value,
+          judgment_sum: row[3].value,
+          image: row[4].value,
+          image_sum: row[5].value
         )
       end
     end

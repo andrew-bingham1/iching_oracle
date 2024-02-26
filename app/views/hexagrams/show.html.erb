@@ -1,5 +1,5 @@
 <body>
-<br><br><br><br><br><br><br><br><br><br>
+<div class="spacer"></div>
 <div id="content">
     <div class="right">
       <div id="title-card">
@@ -7,10 +7,8 @@
       </div>
         <br>
       <img class='ivan' src="/assets/hexagram<%=@hexagram.id%>.png" alt="Hexagram Image" style="display: block; margin-left: auto; margin-right: auto; width: 20%">
-
     <div id='hexagram-text'>
         <%if @response == nil%>
-
         <%else%>
           <h3>The Oracle says...</h3>
           <p><%=@response%></p>
@@ -18,7 +16,10 @@
     </div>
     <br>
   <body>
-      <br>
+  <br>
+  <input type="checkbox" id="showMore" hidden>
+  <label for="showMore"><h6>click to uncover hexagram details...</h6></label>
+  <div class="hiddenContent">
     <div id='hexagram-details'>
       <h3>Summary</h3>
         <p><%=simple_format(@hexagram.summary)%></p>
@@ -31,6 +32,5 @@
         <p><em><%=@hexagram.image%></em></p>
         <p><%=simple_format(@hexagram.image_sum)%></p>
     </div>
-  </body>
-  </div>
-</html>
+          This is the content that was hidden but now it's visible after clicking the label above.
+      </div>

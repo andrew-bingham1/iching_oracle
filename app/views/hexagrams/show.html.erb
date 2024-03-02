@@ -1,36 +1,41 @@
 <body>
-<div class="spacer"></div>
-<div id="content">
-    <div class="right">
-      <div id="title-card">
-        <h2 style="text-align: left;"><%=@hexagram.title%></h2>
-      </div>
+  <div class="spacer"></div>
+  <div id="content">
+    <div class="flex-container">
+      <!-- Left side container for text -->
+      <div class="left-side">
+        <div id="title-card">
+          <h2 style="text-align: left;"><%=@hexagram.title%></h2>
+        </div>
         <br>
-      <img class='ivan' src="/assets/hexagram<%=@hexagram.id%>.png" alt="Hexagram Image" style="display: block; margin-left: auto; margin-right: auto; width: 20%">
-    <div id='hexagram-text'>
-        <%if @response == nil%>
-        <%else%>
-          <h3>The Oracle says...</h3>
-          <p><%=@response%></p>
-        <%end%>
-    </div>
-    <br>
-  <body>
-  <br>
-  <input type="checkbox" id="showMore" hidden>
-  <label for="showMore"><h6>click to uncover hexagram details...</h6></label>
-  <div class="hiddenContent">
-    <div id='hexagram-details'>
-      <h3>Summary</h3>
-        <p><%=simple_format(@hexagram.summary)%></p>
-      <br>
-      <h3>The Judgment</h3>
-        <p><em><%=@hexagram.judgment%></em></p>
-        <p><%=simple_format(@hexagram.judgment_sum)%></p>
-      <br>
-      <h3>The Image</h3>
-        <p><em><%=@hexagram.image%></em></p>
-        <p><%=simple_format(@hexagram.image_sum)%></p>
-    </div>
-          This is the content that was hidden but now it's visible after clicking the label above.
+        <div id='hexagram-text'>
+          <% if @response != nil %>
+            <h3>The Oracle says...</h3>
+            <p><%=@response%></p>
+          <% end %>
+        </div>
+        <br>
+        <input type="checkbox" id="showMore" hidden>
+        <label for="showMore"><h6>click to uncover hexagram details...</h6></label>
+        <div class="hiddenContent">
+          <div id='hexagram-details'>
+            <h3>Summary</h3>
+              <p><%=simple_format(@hexagram.summary)%></p>
+            <br>
+            <h3>The Judgment</h3>
+              <p><em><%=@hexagram.judgment%></em></p>
+              <p><%=simple_format(@hexagram.judgment_sum)%></p>
+            <br>
+            <h3>The Image</h3>
+              <p><em><%=@hexagram.image%></em></p>
+              <p><%=simple_format(@hexagram.image_sum)%></p>
+          </div>
+        </div>
       </div>
+      <!-- Right side container for image -->
+      <div class="image-side">
+        <img class='ivan' src="/assets/hexagram<%= @hexagram.id %>.png" alt="Hexagram Image">
+      </div>
+    </div>
+  </div>
+</body>

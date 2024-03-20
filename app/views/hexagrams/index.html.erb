@@ -7,6 +7,8 @@
                     <% @hexagrams.each do |hexagram| %>
                         <li><%= link_to hexagram.title, hexagram_path(hexagram.id) %></li>
                         <br>
+                        <img class='ivan' src="/assets/hexagram<%= hexagram.id %>.png" alt="Hexagram Image">
+                        <br><br>
                     <% end %>
                 </ol>
      </div>
